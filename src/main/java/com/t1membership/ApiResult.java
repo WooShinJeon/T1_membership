@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.anpetna;
+=======
+package com.t1membership;
+>>>>>>> board
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.anpetna.config;
+=======
+package com.t1membership.config;
+>>>>>>> board
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;

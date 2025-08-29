@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.anpetna.config;
+=======
+package com.t1membership.config;
+>>>>>>> board
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package com.anpetna.coreDomain;
+=======
+package com.t1membership.coredomain;
+>>>>>>> board
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
