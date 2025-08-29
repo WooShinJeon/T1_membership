@@ -1,13 +1,14 @@
 package com.t1membership.board.domain;
 
 import com.t1membership.board.constant.BoardType;
-import com.t1membership.coredomain.BaseEntity;
+import com.t1membership.coreDomain.BaseEntity;
 import com.t1membership.member.domain.MemberEntity;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -33,6 +34,9 @@ public class BoardEntity extends BaseEntity {
     @Lob
     @Column(name = "board_content", nullable = false, length = 2000)
     private String bContent;
+
+    @Column(name = "board_viewCount", nullable = false)
+    private int bViewCount = 0;
 
     @Column(name = "board_likeCount", nullable = false)
     private int bLikeCount = 0;

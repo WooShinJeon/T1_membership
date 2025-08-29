@@ -1,4 +1,4 @@
-package com.t1membership.coredomain;
+package com.t1membership.coreDomain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

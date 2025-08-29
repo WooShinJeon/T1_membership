@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+package com.anpetna.config;
+=======
 package com.t1membership.config;
+>>>>>>> board
 
 import com.anpetna.auth.service.BlacklistServiceImpl;
 import com.anpetna.member.repository.MemberRepository;

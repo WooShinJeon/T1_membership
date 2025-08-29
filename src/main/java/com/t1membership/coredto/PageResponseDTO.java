@@ -1,4 +1,4 @@
-package com.anpetna.coreDto;
+package com.t1membership.coreDto;
 
 import lombok.Builder;
 import lombok.Getter;
