@@ -2,8 +2,12 @@ package com.t1membership.board.domain;
 
 import com.t1membership.board.constant.BoardType;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import com.t1membership.coredomain.BaseEntity;
+=======
+import com.t1membership.coreDomain.BaseEntity;
+>>>>>>> 36da7a7e4c24b2e2906f5374dd7e88c1632d734b
 import com.t1membership.member.domain.MemberEntity;
 >>>>>>> board
 import jakarta.persistence.*;
@@ -12,9 +16,13 @@ import lombok.*;
 @Entity
 @Getter
 <<<<<<< HEAD
+<<<<<<< HEAD
 @Setter
 =======
 >>>>>>> board
+=======
+@Setter
+>>>>>>> 36da7a7e4c24b2e2906f5374dd7e88c1632d734b
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
@@ -49,11 +57,17 @@ public class BoardEntity extends BaseEntity {
     private String bContent;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     @Column(name = "board_viewCount", nullable = false)
     private int bViewCount = 0;
 
 =======
 >>>>>>> board
+=======
+    @Column(name = "board_viewCount", nullable = false)
+    private int bViewCount = 0;
+
+>>>>>>> 36da7a7e4c24b2e2906f5374dd7e88c1632d734b
     @Column(name = "board_likeCount", nullable = false)
     private int bLikeCount = 0;
 
