@@ -1,8 +1,5 @@
 package com.t1membership.board.dto.createComment;
 
-<<<<<<< HEAD
-public class CreateCommentReq {
-=======
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
@@ -22,5 +19,5 @@ public class CreateCommentReq {
     private String cContent;
     @Builder.Default
     private int cLikeCount = 0;
->>>>>>> board
+
 }

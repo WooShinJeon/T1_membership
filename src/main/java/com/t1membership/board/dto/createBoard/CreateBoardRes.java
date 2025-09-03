@@ -1,8 +1,5 @@
 package com.t1membership.board.dto.createBoard;
 
-<<<<<<< HEAD
-public class CreateBoardRes {
-=======
 import com.t1membership.board.constant.BoardType;
 import com.t1membership.board.domain.BoardEntity;
 import lombok.*;
@@ -42,5 +39,5 @@ public class CreateBoardRes {
                 .latestDate(boardEntity.getLatestDate())
                 .build();
     }
->>>>>>> board
+
 }
