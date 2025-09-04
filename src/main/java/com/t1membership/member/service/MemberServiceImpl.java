@@ -1,5 +1,6 @@
 package com.t1membership.member.service;
 
+import com.t1membership.member.domain.MemberEntity;
 import com.t1membership.member.dto.deleteMember.DeleteMemberReq;
 import com.t1membership.member.dto.deleteMember.DeleteMemberRes;
 import com.t1membership.member.dto.joinMember.JoinMemberReq;
@@ -21,6 +22,9 @@ public class MemberServiceImpl implements MemberService {
 
     @Override
     public JoinMemberRes joinMember(JoinMemberReq joinMemberReq) {
+        String memberId = joinMemberReq.getMemberEmail();
+        memberRepository.save(new MemberEntity());
+
         return null;
     }
     @Override
