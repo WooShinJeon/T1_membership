@@ -1,8 +1,5 @@
 package com.t1membership.board.dto.createComment;
 
-<<<<<<< HEAD
-public class CreateCommentRes {
-=======
 import com.t1membership.board.domain.CommentEntity;
 import lombok.*;
 
@@ -27,5 +24,4 @@ public class CreateCommentRes {
                 .cLikeCount(commentEntity.getCLikeCount())
                 .build();
     }
->>>>>>> board
 }

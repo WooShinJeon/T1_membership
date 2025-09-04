@@ -1,8 +1,5 @@
 package com.t1membership.board.dto.createBoard;
 
-<<<<<<< HEAD
-public class CreateBoardReq {
-=======
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.t1membership.board.constant.BoardType;
 import jakarta.validation.constraints.NotBlank;
@@ -27,5 +24,5 @@ public class CreateBoardReq {
     private BoardType boardType;
     private boolean notice;
     private boolean isSecret;
->>>>>>> board
+
 }

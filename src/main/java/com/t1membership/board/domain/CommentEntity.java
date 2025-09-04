@@ -1,8 +1,5 @@
 package com.t1membership.board.domain;
 
-<<<<<<< HEAD
-public class CommentEntity {
-=======
 import com.t1membership.member.domain.MemberEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -36,5 +33,5 @@ public class CommentEntity {
 
     @Column(name = "comment_likeCount", nullable = false)
     private int cLikeCount = 0;
->>>>>>> board
+
 }
