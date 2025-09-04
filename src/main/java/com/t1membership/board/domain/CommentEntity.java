@@ -22,15 +22,16 @@ public class CommentEntity {
     private MemberEntity member; // member
 
     @Column(name = "comment_writer", nullable = false)
-    private String cWriter;
+    private String commentWriter;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "comment_no", nullable = false)
-    private Long cno;
+    private Long commentNo;
 
     @Column(name = "comment_content", nullable = false)
-    private String cContent;
+    private String commentContent;
 
     @Column(name = "comment_likeCount", nullable = false)
-    private int cLikeCount = 0;
+    private int commentLikeCount = 0;
 }

@@ -19,34 +19,30 @@ public class BoardEntity extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "board_no", nullable = false)
-    private Long bno;
+    private Long boardNo;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "member_email")
     private MemberEntity member; // member
 
     @Column(name = "board_writer", nullable = false)
-    private String bWriter; // member
+    private String boardWriter;
 
     @Column(name = "board_title", nullable = false)
-    private String bTitle;
+    private String boardTitle;
 
     @Lob
     @Column(name = "board_content", nullable = false, length = 2000)
-    private String bContent;
-
-    @Column(name = "board_viewCount", nullable = false)
-    private int bViewCount = 0;
+    private String boardContent;
 
     @Column(name = "board_likeCount", nullable = false)
-    private int bLikeCount = 0;
+    private int boardLikeCount = 0;
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private BoardType boardType;
 
     @Column(nullable = false)
-    @Builder.Default
     private boolean notice = false;
 
     @Column(nullable = false)

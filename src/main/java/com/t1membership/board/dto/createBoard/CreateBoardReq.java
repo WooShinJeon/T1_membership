@@ -15,11 +15,11 @@ import lombok.*;
 public class CreateBoardReq {
 
     @NotBlank
-    private String bTitle;
+    private String boardTitle;
     @NotBlank
-    private String bContent;
+    private String boardContent;
     @Builder.Default
-    private int bLikeCount = 0;
+    private int boardLikeCount = 0;
 
     private BoardType boardType;
     private boolean notice;
