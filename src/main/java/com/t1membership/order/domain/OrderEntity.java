@@ -1,5 +1,6 @@
 package com.t1membership.order.domain;
 
+import com.t1membership.item.domain.ItemEntity;
 import com.t1membership.member.domain.MemberEntity;
 import jakarta.persistence.*;
 import lombok.*;
@@ -18,6 +19,10 @@ public class OrderEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long orderNo;
 
+    @ManyToOne
+    @JoinColumn(name = "member_email")
+    private MemberEntity memberEntity;
+
     @Column(name = "member_address",nullable = false)
     private String memberAddress;
 
@@ -34,7 +39,6 @@ public class OrderEntity {
     @Column(name = "item_image",nullable = false)
     private String itemImage;
 
-    @ManyToOne
-    @JoinColumn(name = "member_email")
-    private MemberEntity memberEntity;
+    @Column(name = "order_total_price",nullable = false)
+    private int orderTotalPrice;
 }
