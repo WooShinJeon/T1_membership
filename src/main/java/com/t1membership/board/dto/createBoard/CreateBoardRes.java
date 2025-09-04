@@ -14,11 +14,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class CreateBoardRes {
 
-    private Long bno;
-    private String bTitle;
-    private String bWriter;
-    private String bContent;
-    private int bLikeCount;
+    private Long boardNo;
+    private String boardTitle;
+    private String boardWriter;
+    private String boardContent;
+    private int boardLikeCount;
     private BoardType boardType;
     private boolean notice;
     private boolean isSecret;
@@ -28,11 +28,11 @@ public class CreateBoardRes {
 
     public static CreateBoardRes from(BoardEntity boardEntity) {
         return CreateBoardRes.builder()
-                .bno(boardEntity.getBno())
-                .bTitle(boardEntity.getBTitle())
-                .bWriter(boardEntity.getMember().getMemberNickName())
-                .bContent(boardEntity.getBContent())
-                .bLikeCount(boardEntity.getBLikeCount())
+                .boardNo(boardEntity.getBoardNo())
+                .boardTitle(boardEntity.getBoardTitle())
+                .boardWriter(boardEntity.getMember().getMemberNickName())
+                .boardContent(boardEntity.getBoardContent())
+                .boardLikeCount(boardEntity.getBoardLikeCount())
                 .notice(boardEntity.isNotice())
                 .isSecret(boardEntity.isSecret())
                 .createDate(boardEntity.getCreateDate())

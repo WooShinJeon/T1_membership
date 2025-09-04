@@ -11,17 +11,17 @@ import lombok.*;
 @NoArgsConstructor
 public class CreateCommentRes {
 
-    private Long cno;
-    private String cWriter;
-    private String cContent;
-    private int cLikeCount;
+    private Long commentNo;
+    private String commentWriter;
+    private String commentContent;
+    private int commentLikeCount;
 
     public static CreateCommentRes from(CommentEntity commentEntity) {
         return CreateCommentRes.builder()
-                .cno(commentEntity.getCno())
-                .cWriter(commentEntity.getMember().getMemberNickName())
-                .cContent(commentEntity.getCContent())
-                .cLikeCount(commentEntity.getCLikeCount())
+                .commentNo(commentEntity.getCommentNo())
+                .commentWriter(commentEntity.getMember().getMemberNickName())
+                .commentContent(commentEntity.getCommentContent())
+                .commentLikeCount(commentEntity.getCommentLikeCount())
                 .build();
     }
 }
